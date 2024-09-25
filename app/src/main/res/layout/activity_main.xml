@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tipCalculatorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/billAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Bill Amount"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/tipPercentageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Tip Percentage:"/>
+
+    <RadioGroup
+        android:id="@+id/tipPercentageRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/tip10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10%" />
+
+        <RadioButton
+            android:id="@+id/tip15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15%" />
+
+        <RadioButton
+            android:id="@+id/tip20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20%" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculateTipButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Tip"/>
+
+    <TextView
+        android:id="@+id/tipAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+</LinearLayout>
